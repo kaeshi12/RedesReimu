@@ -9,11 +9,6 @@
     --color-light: #f9f1f0; /* Color de fondo claro */
 }
 
-body {
-    background: linear-gradient(135deg, #f9f9ff 0%, #f8f1ff 100%);
-    background-attachment: fixed;
-}
-
 .container {
     width: 90%;
     max-width: 1200px;
