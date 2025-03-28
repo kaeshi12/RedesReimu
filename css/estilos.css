@@ -10,9 +10,8 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.8;
-    color: #333;
+    background: linear-gradient(135deg, #f9f9ff 0%, #f8f1ff 100%);
+    background-attachment: fixed;
 }
 
 .container {
