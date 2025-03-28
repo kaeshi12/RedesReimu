@@ -2,11 +2,17 @@
 
 :root {
     --padding-container: 100px 0;
-    --color-title: #001A49;
+    --color-title: #3a2a5f; /* Cambié a un tono morado más poético */
+    --color-primary: #6c5b7b; /* Color principal morado */
+    --color-secondary: #c06c84; /* Color secundario rosado */
+    --color-accent: #f8b195; /* Color de acento */
+    --color-light: #f9f1f0; /* Color de fondo claro */
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    color: #333;
 }
 
 .container {
@@ -742,80 +748,4 @@ body {
     background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="%23e5e5f7"/></svg>');
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-/* Burbujas decorativas */
-.burbujas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
-    pointer-events: none;
-}
-
-.burbuja {
-    position: absolute;
-    bottom: -100px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
-    animation: burbujas 15s linear infinite;
-}
-
-.burbuja:nth-child(1) {
-    width: 40px;
-    height: 40px;
-    left: 10%;
-    animation-duration: 20s;
-}
-
-.burbuja:nth-child(2) {
-    width: 20px;
-    height: 20px;
-    left: 20%;
-    animation-duration: 15s;
-}
-
-.burbuja:nth-child(3) {
-    width: 50px;
-    height: 50px;
-    left: 35%;
-    animation-duration: 25s;
-}
-
-.burbuja:nth-child(4) {
-    width: 30px;
-    height: 30px;
-    left: 50%;
-    animation-duration: 18s;
-}
-
-.burbuja:nth-child(5) {
-    width: 25px;
-    height: 25px;
-    left: 65%;
-    animation-duration: 22s;
-}
-
-.burbuja:nth-child(6) {
-    width: 40px;
-    height: 40px;
-    left: 80%;
-    animation-duration: 17s;
-}
-
-@keyframes burbujas {
-    0% {
-        bottom: -100px;
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(100px);
-    }
-    100% {
-        bottom: 100vh;
-        transform: translateX(-200px);
-    }
 }
